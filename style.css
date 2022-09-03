@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root {
+    /* Primary */
+    --Violet--: hsl(257, 40%, 49%);
+    --Soft-Magenta--: hsl(300, 69%, 71%)
+}
+
+body {
+    background-color: var(--Violet--);
+    background-image: url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFF;
+    display: flex;
+    padding: 35px 50px;
+}
+
+.logoImg {
+    max-width: 200px;
+    margin-bottom: 50px;
+}
+
+.mockupsImg {
+    max-width: 650px;
+}
+
+.contentSection {
+    margin-left: 50px;
+    padding: 10px;
+    line-height: 27px;
+    margin-top: 100px;
+}
+
+.title {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 40px;
+    padding: 0px 30px 0px 0px;
+}
+
+.registerButton {
+    color: var(--Violet--);
+    margin-top: 20px;
+    padding: 12px 40px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.registerButton:hover {
+    color: #FFF;
+    background-color: var(--Soft-Magenta--);
+}
+
+.socialIcon {
+    display: flex;
+    margin-top: 50px;
+    justify-content: end;
+}
+
+.fa {
+    padding-top: 6px;
+    border: 1px solid #FFF;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.fa:hover {
+    color: var(--Soft-Magenta--);
+    border: 1px solid var(--Soft-Magenta--);
+}
+
+@media screen and (max-width: 1185px) {
+    .title {
+        padding: 0px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 1185px) {
+    body {
+        padding: 30px 0px 0px 0px;
+        margin: auto;
+        width: 400px;
+        background: url(./images/bg-mobile.svg);
+        background-size: cover;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-color: var(--Violet--);
+    }
+    .mockupsImg {
+        width: 100%;
+        margin: auto;
+    }
+    .contentSection {
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .registerButton {
+        width: 80%;
+    }
+    .socialIcon {
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
